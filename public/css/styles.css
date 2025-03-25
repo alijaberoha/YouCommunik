@@ -1,0 +1,389 @@
+/* Réinitialise les marges et paddings par défaut et applique une police moderne */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* Barre de navigation principale avec fond sombre et éléments espacés */
+nav {
+  background-color: #1A1A1D;
+  display: flex; /* aligne les enfants (logo et menu) en ligne */
+  align-items: center; /* centre verticalement les éléments */
+  justify-content: space-between; /* espace égal entre logo et menu */
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+/* Logo dans la navigation */
+nav > img {
+  width: 23%; /* le logo prend 23% de la largeur */
+}
+
+/* Menu de navigation */
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* permet le retour à la ligne si pas assez de place */
+  list-style: none; /* enlève les puces des listes */
+  gap: 20px; /* espace entre les éléments du menu */
+  margin: 0;
+  padding: 0;
+  width: 50%; /* la liste prend la moitié de la largeur */
+}
+
+/* Texte dans les éléments du menu */
+nav ul li p{
+  color: white;
+}
+
+/* Lien dans la navigation avec alignement vertical (image au-dessus du texte) */
+nav ul li a {
+  margin-top: 10px;
+  color: white;
+  text-decoration: none; /* enlève le soulignement */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Icône dans le menu de navigation */
+nav ul li a img {
+  width: 85px;
+}
+
+/* Section bleue principale */
+.blue {
+  background-color: #334D5C;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+/* Image dans la section bleue */
+.blue img {
+  height: 220px;
+}
+
+/* Premier bloc dans .blue (gauche) */
+.blue div:first-of-type {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Titre principal dans .blue */
+.blue h1{
+  font-size: 80px;
+  margin: 0;
+  font-weight: 400; 
+  margin-top: 75px;
+}
+
+/* Sous-titre dans .blue */
+.blue h2 {
+  font-size: 50px;
+  margin: 0;
+  font-weight: 300;
+  margin-bottom: 75px;
+}
+
+/* Deuxième bloc dans .blue (droite) */
+.blue div:nth-of-type(2){
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  gap: 20px;
+}
+
+/* Section blanche 1 : centrée et verticale */
+.white1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Titre avec fond bleu dans .white1 */
+.white1 h1 {
+  background-color: #334D5C;
+  width: 470px;
+  height: 110px;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 70px;
+  font-weight: 400;
+  color: white;
+}
+
+/* Contenu principal (texte + image) dans .white1 */
+.white1 div+div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 86%;
+  font-size: 24px;
+  color: #3F3D42;
+  gap: 20px;
+}
+
+/* Paragraphe dans .white1 */
+.white1 div p {
+  margin-top: 0px;
+  margin-right: 50px;
+}
+
+/* Image dans .white1 */
+.white1 img {
+  width: 300px;
+  margin-bottom: 40px;
+}
+
+/* Section blanche 2 */
+.white2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Titre dans .white2 */
+.white2 div h1 {
+  background-color: #334D5C;
+  width: 470px;
+  height: 110px;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 70px;
+  font-weight: 400;
+  color: white;
+}
+
+/* Contenu texte + image dans .white2 */
+.white2 div+div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 86%;
+  font-size: 24px;
+  color: #3F3D42;
+  gap: 20px;
+}
+
+/* Texte dans .white2 */
+.white2 div p {
+  margin-top: 0px;
+  margin-right: 50px;
+}
+
+/* Image dans .white2 */
+.white2 img {
+  width: 300px;
+  margin-bottom: 40px;
+}
+
+/* Section blanche 3 */
+.white3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Titre dans .white3 */
+.white3 div h1 {
+  background-color: #334D5C;
+  width: 470px;
+  height: 110px;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 70px;
+  font-weight: 400;
+  color: white;
+}
+
+/* Contenu texte + image dans .white3 */
+.white3 div+div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 86%;
+  font-size: 24px;
+  color: #3F3D42;
+  gap: 20px;
+}
+
+/* Texte dans .white3 */
+.white3 div p {
+  margin-top: 0px;
+  margin-right: 50px;
+}
+
+/* Image dans .white3 */
+.white3 img {
+  width: 280px;
+  margin-bottom: 40px;
+}
+
+/* Deuxième section beige (centrée, colonne) */
+.beige2 { 
+  background-color: beige;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Conteneur horizontal dans .beige2 */
+.beige2 > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  gap: 150px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+/* Éléments internes dans .beige2 */
+.beige2 > div > div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+}
+
+/* Images dans .beige2 */
+.beige2 img {
+  width: 120px;
+}
+
+/* Première section beige (ligne avec icônes et texte) */
+.beige1 {
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+  flex-wrap: wrap;
+}
+
+/* Bloc individuel dans .beige1 */
+.beige1 div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+/* Image dans .beige1 */
+.beige1 img {
+  width: 120px;
+}
+
+/* Troisième section beige */
+.beige3 {
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+  flex-wrap: wrap;
+}
+
+/* Bloc dans .beige3 */
+.beige3 div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+/* Image dans .beige3 */
+.beige3 img {
+  width: 120px;
+}
+
+/* Pied de page (footer) */
+footer {
+  background-color: #161515ad; /* première couleur (sera écrasée plus bas) */
+  color: white;
+  height: 23vh;
+  text-align: center;
+}
+
+/* Pied de page final */
+footer {
+  background-color: #393A3B; /* couleur de fond finale (écrase la précédente) */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Contenu principal du footer */
+footer > div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+/* Colonne dans le footer */
+footer > div > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Ligne de contenu dans une colonne */
+footer > div > div > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/* Titre dans le footer */
+footer h4 {
+  font-size: 28px;
+  color: white;
+  margin: 0;
+  margin-top: 50px;
+}
+
+/* Image/logo dans le footer */
+footer img {
+  width: 90px;
+}
+
+/* Texte à droite du footer */
+footer p {
+  text-align: right;
+  margin-right: 20px;
+  margin-top: 50px;
+  font-size: 20px;
+  color: white;
+}
+
+/* Premier bloc aligné à gauche */
+footer >div >div:nth-of-type(1) {
+  margin-left: 50px;
+}
+
+/* Troisième bloc aligné à droite */
+footer >div >div:nth-of-type(3) {
+  margin-right: 50px;
+}
